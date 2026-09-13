@@ -31,4 +31,4 @@ terraform apply
 
 The AWS account must already permit the Terraform operator to create the listed resources. The selected subnet must provide the network access required by SSM and approved package repositories.
 
-Julius Tawe Massa with AI assistance.
+It's been Julius T. Massa with AI assistance.
