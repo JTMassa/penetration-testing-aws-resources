@@ -1,0 +1,20 @@
+aws_region     = "us-east-1"
+owner          = "security-team"
+expiration_date = "2026-10-31"
+vpc_id         = "vpc-0123456789abcdef0"
+subnet_id      = "subnet-0123456789abcdef0"
+
+# Use SSM by default. If SSH is approved, set enable_ssh = true and provide vendor CIDRs.
+enable_ssh              = false
+allowed_ssh_cidr_blocks = []
+
+testers = [
+  {
+    username       = "tester-alice"
+    ssh_public_key = "ssh-ed25519 AAAA... approved-key-material"
+  },
+  {
+    username       = "tester-bob"
+    ssh_public_key = "ssh-ed25519 AAAA... approved-key-material"
+  }
+]
